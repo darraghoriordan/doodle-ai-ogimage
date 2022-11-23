@@ -27,29 +27,29 @@ export default function handler(req: NextRequest): ImageResponse {
     const response = new ImageResponse(
       (
         <div
-          tw={`flex flex-col items-center py-15 px-20 mx-auto`}
+          tw={`flex flex-col items-center py-15 px-15 mx-auto`}
           style={{
             width: "1200px",
             height: "630px",
             backgroundColor: "#121213",
           }}
         >
-          <div tw="flex mb-10 grow  text-white">
-            <p tw="p-0 m-0 text-center text-7xl">💡 doodle : ai</p>
+          <div tw="flex grow text-white">
+            <span tw="p-0 m-0 text-center text-7xl">💡 doodle : ai</span>
           </div>
-          <div tw="flex justify-between items-center shrink w-full">
+          <div tw="flex justify-around items-center shrink w-full rounded-xl bg-white p-6">
             <div tw="w-1/2 flex">
               <img
                 alt="doodle ai game"
                 src={gameImage}
                 tw="rounded-lg shadow-lg"
-                width={400}
-                height={400}
+                width={343}
+                height={343}
               />
             </div>
 
-            <div tw="w-1/2  text-white text-center text-7xl">
-              Can you guess what the AI has drawn?
+            <div tw="w-1/2 text-black text-left text-6xl">
+              Can you guess what the AI has been reading?
             </div>
           </div>
         </div>
